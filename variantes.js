@@ -25,8 +25,8 @@
 
   var VARIANTES = {
     grl: {
-      mensagem: "Olá! Vi no Google e quero pedir gás na Granja Lisboa.",
-      itens: [null, "Entrega em <strong>até 30 minutos</strong> na Granja Lisboa, Bom Jardim, Granja Portugal e região."],
+      mensagem: "Olá! Vi no Google e quero pedir gás em Fortaleza.",
+      itens: [null, "Entrega em <strong>até 30 minutos</strong> em Fortaleza."],
       horario: HORARIO_GRL,
     },
     ara: {
