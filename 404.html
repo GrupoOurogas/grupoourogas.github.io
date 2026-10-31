@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Abrindo o WhatsApp…</title>
+<style>
+  :root { color-scheme: light dark; --fundo: #faf8f5; --texto: #1f1b16; --suave: #5c5448; --bronze: #8a5a1f; }
+  @media (prefers-color-scheme: dark) { :root { --fundo: #15130f; --texto: #f2ede4; --suave: #b9ae9c; --bronze: #d9a15a; } }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--fundo); color: var(--texto);
+         font-family: "DM Sans", system-ui, sans-serif; text-align: center; padding: 24px; }
+  .bolinha { width: 14px; height: 14px; border-radius: 50%; background: var(--bronze); margin: 0 auto 16px; }
+  h1 { font-size: 1.25rem; margin: 0 0 8px; }
+  p { margin: 0; color: var(--suave); }
+  a { color: var(--bronze); min-height: 44px; display: inline-block; }
+  [hidden] { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <div id="abrindo">
+    <div class="bolinha" aria-hidden="true"></div>
+    <h1>Abrindo o WhatsApp…</h1>
+    <p>Se nada acontecer, <a id="manual" href="#">toque aqui</a>.</p>
+  </div>
+  <div id="nao-achou" hidden>
+    <h1>404</h1>
+    <p>Página não encontrada.</p>
+  </div>
+</main>
+<script src="/config.js"></script>
+<script src="/repasse.js"></script>
+<script>
+  (function () {
+    var cfg = window.REPASSE_CFG;
+    var destino = cfg ? destinoDoRepasse(location.pathname, cfg) : null;
+    if (destino) {
+      document.getElementById("manual").href = destino;
+      location.replace(destino);
+    } else {
+      document.title = "404";
+      document.getElementById("abrindo").hidden = true;
+      document.getElementById("nao-achou").hidden = false;
+    }
+  })();
+</script>
+</body>
+</html>
