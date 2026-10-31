@@ -26,12 +26,12 @@
   var VARIANTES = {
     grl: {
       mensagem: "Olá! Vi no Google e quero pedir gás em Fortaleza.",
-      itens: [null, "Entrega em <strong>até 30 minutos</strong> em Fortaleza."],
+      itens: ["<strong>Gás do Povo sem taxa de entrega</strong>, direto na sua casa.", "Entrega em <strong>até 30 minutos</strong> em Fortaleza."],
       horario: HORARIO_GRL,
     },
     ara: {
       mensagem: "Olá! Vi no Google e quero pedir gás em Aracati.",
-      itens: [null, "Entrega em <strong>até 30 minutos</strong> em Aracati, Majorlândia, Canoa Quebrada, Fortim e Icapuí."],
+      itens: ["<strong>Gás do Povo sem taxa de entrega</strong>, direto na sua casa.", "Entrega em <strong>até 30 minutos</strong> em Aracati, Majorlândia e Canoa Quebrada. Também entregamos em Fortim e Icapuí."],
       horario: HORARIO_ARA,
     },
     "emp-grl": {
@@ -68,7 +68,7 @@
       titulo: "Abra sua <span>revenda de gás</span>",
       texto: "Seja parceiro do Grupo Ouro Gás. Você entra com a vontade; nós entramos com conhecimento, sistemas, método validado, abastecimento e contabilidade.",
       botao: ["Quero ser parceiro", "Fale com a gente no WhatsApp 0800 115 1808"],
-      itens: ["Método que já funciona nas <strong>nossas revendas</strong> no Ceará.", "<strong>Sistemas, abastecimento e contabilidade</strong> do primeiro dia."],
+      itens: ["Método que já funciona nas <strong>nossas revendas</strong> no Ceará.", "Apoio com <strong>sistemas, abastecimento e contabilidade</strong>."],
       horario: null,
     },
     "en-ara": {
