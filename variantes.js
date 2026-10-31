@@ -26,11 +26,25 @@
   var VARIANTES = {
     grl: {
       mensagem: "Olá! Vi no Google e quero pedir gás em Fortaleza.",
+      // O anúncio mostra o preço; o Google exige o mesmo preço na página.
+      botao: ["Pedir gás no WhatsApp", "Botijão P13 R$ 114,99 · sem taxa de entrega"],
       itens: ["<strong>Gás do Povo sem taxa de entrega</strong>, direto na sua casa.", "Entrega em <strong>até 30 minutos</strong> em Fortaleza."],
       horario: HORARIO_GRL,
     },
     ara: {
       mensagem: "Olá! Vi no Google e quero pedir gás em Aracati.",
+      botao: ["Pedir gás no WhatsApp", "Botijão P13 R$ 119,99 · sem taxa de entrega"],
+      itens: ["<strong>Gás do Povo sem taxa de entrega</strong>, direto na sua casa.", "Entrega em <strong>até 30 minutos</strong> em Aracati, Majorlândia e Canoa Quebrada. Também entregamos em Fortim e Icapuí."],
+      horario: HORARIO_ARA,
+    },
+    // Campanhas só de Gás do Povo (foco nos dias 08 a 14, quando o benefício é liberado).
+    "gdp-grl": {
+      mensagem: "Olá! Vi no Google e quero receber meu Gás do Povo em Fortaleza.",
+      itens: ["<strong>Gás do Povo sem taxa de entrega</strong>, direto na sua casa.", "Entrega em <strong>até 30 minutos</strong> em Fortaleza."],
+      horario: HORARIO_GRL,
+    },
+    "gdp-ara": {
+      mensagem: "Olá! Vi no Google e quero receber meu Gás do Povo em Aracati.",
       itens: ["<strong>Gás do Povo sem taxa de entrega</strong>, direto na sua casa.", "Entrega em <strong>até 30 minutos</strong> em Aracati, Majorlândia e Canoa Quebrada. Também entregamos em Fortim e Icapuí."],
       horario: HORARIO_ARA,
     },
